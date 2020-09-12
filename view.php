@@ -14,7 +14,7 @@
 $servername = "localhost";
 
 // REPLACE with your Database name
-$dbname = "dht11";
+$dbname = "dhtdata";
 // REPLACE with Database user
 $username = "root";
 // REPLACE with Database user password

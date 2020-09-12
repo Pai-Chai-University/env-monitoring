@@ -8,7 +8,7 @@ Created By Embedotronics Technologies*/
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 #include <SPI.h>
-#include <MFRC522.h>
+
 
 #define DHTPIN D2
 
@@ -18,10 +18,10 @@ DHT dht(DHTPIN,DHTTYPE);
 
 float humidityData;
 float temperatureData;
-const char* ssid = "PCU_J_2.4G";// 
-const char* password = "";
+const char* ssid = "맞는 것으로 바꾸세요";// 
+const char* password = "맞는 것으로 바꾸세요";
 //WiFiClient client;
-char server[] = "172.17.0.251";   //eg: 192.168.0.222
+char server[] = "맞는 것으로 바꾸세요";   //eg: 192.168.0.222
 
 
 WiFiClient client;    

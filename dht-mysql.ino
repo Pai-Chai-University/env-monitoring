@@ -10,7 +10,7 @@ Created By Embedotronics Technologies*/
 #include <SPI.h>
 #include <MFRC522.h>
 
-#define DHTPIN D1
+#define DHTPIN D2
 
 #define DHTTYPE DHT11
 

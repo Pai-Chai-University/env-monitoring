@@ -19,5 +19,6 @@ class dht11{
 }
 if($_GET['temperature'] != '' and  $_GET['humidity'] != ''){
  $dht11=new dht11($_GET['temperature'],$_GET['humidity']);
+ echo 'OK';
 }
 ?>

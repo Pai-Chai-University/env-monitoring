@@ -7,7 +7,7 @@ class dht11{
  }
  
  function connect(){
-  $this->link = mysqli_connect('localhost','root','') or die('Cannot connect to the DB');
+  $this->link = mysqli_connect('localhost','dhtuser','dht11') or die('Cannot connect to the DB');
   mysqli_select_db($this->link,'dht11') or die('Cannot select the DB');
  }
  

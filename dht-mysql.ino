@@ -18,10 +18,10 @@ DHT dht(DHTPIN,DHTTYPE);
 
 float humidityData;
 float temperatureData;
-const char* ssid = "맞는 것으로 바꾸세요";// 
-const char* password = "맞는 것으로 바꾸세요";
+const char* ssid = "사용하는 무선 네트워크이름";// 
+const char* password = "암호";
 //WiFiClient client;
-char server[] = "맞는 것으로 바꾸세요";   //eg: 192.168.0.222
+char server[] = "서버 주소";   //eg: 192.168.0.222
 
 
 WiFiClient client;    
@@ -68,12 +68,12 @@ void loop()
     
     Serial.println("connected");
     // Make a HTTP request:
-    Serial.print("GET /testcode/dht.php?humidity=");
-    Serial.println(humidityData);
-    Serial.println("&temperature=");
+    Serial.print("humidity=");
+    Serial.print(humidityData);
+    Serial.print("&temperature=");
     Serial.println(temperatureData);
     
-    client.print("GET http://localhost/testcode/dht.php?humidity=");     //YOUR URL
+    client.print("GET http://host-pc-ip:4000/dht.php?humidity=");     //YOUR URL
     client.print(humidityData);
     client.print("&temperature=");
     client.print(temperatureData);

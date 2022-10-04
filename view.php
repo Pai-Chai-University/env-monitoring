@@ -16,9 +16,9 @@ $servername = "localhost";
 // REPLACE with your Database name
 $dbname = "dht11";
 // REPLACE with Database user
-$username = "root";
+$username = "dhtuser";
 // REPLACE with Database user password
-$password = "";
+$password = "dht11";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

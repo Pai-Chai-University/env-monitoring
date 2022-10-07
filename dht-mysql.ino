@@ -64,7 +64,7 @@ void loop()
 
  void Sending_To_phpmyadmindatabase()   //CONNECTING WITH MYSQL
  {
-   if (client.connect(server, 80)) {
+   if (client.connect(server, 4000)) {
     
     Serial.println("connected");
     // Make a HTTP request:
